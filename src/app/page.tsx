@@ -67,7 +67,7 @@ export default function Home() {
           </div>
           <div className='flex flex-col md:flex-row bg-black/20 py-12 gap-3 md:space-x-5 space-y-3 items-center px-5 mx-auto'>
             <a className=''>
-              <Image src='/Album-covers/Sleeptoken.png' className='max-w-sm' width={240} height={240} alt=''/>
+              <Image src='/Album-covers/Sleeptokenbig.jpg' className='max-w-sm w-64 h-64' width={400} height={400} alt=''/>
             </a>
             <div className='flex flex-col mx-0 gap-5'>
               <span className='font-semibold text-sm'>PLAYLIST</span>
