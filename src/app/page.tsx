@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen p-2">
+    <div className="flex flex-col h-screen p-2 pb-0">
       <div className='flex flex-1 pt-8 gap-3'>
         <aside className='flex flex-col w-20 gap-3'>
           <div className='flex flex-col h-32 bg-zinc-900 rounded-xl p-2 items-center justify-center space-y-6 text-zinc-400'>
@@ -65,13 +65,13 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className='flex bg-black/20 h-80 gap-3 space-x-5 items-center px-5 mx-auto'>
+          <div className='flex flex-col md:flex-row bg-black/20 py-12 gap-3 space-x-5 items-center px-5 mx-auto'>
             <a className=''>
               <Image src='/Album-covers/Sleeptoken.png' className='max-w-sm' width={240} height={240} alt=''/>
             </a>
             <div className='flex flex-col gap-5'>
               <span className='font-semibold text-sm'>PLAYLIST</span>
-              <h1 className='text-6xl font-bold'>Popular Metal Songs...</h1>
+              <h1 className='text-3xl md:text-6xl font-bold'>Popular Metal Songs...</h1>
               <span className='font-medium'>Listen to the most sucessful Metal songs!</span>
               <div className='flex space-x-8'>
                 <button className='bg-green-500 text-xl px-8 py-3 text-zinc-900 font-medium rounded-full flex justify-center items-center hover:ring-2 ring-green-500'>
@@ -81,14 +81,14 @@ export default function Home() {
                   Follow
                 </button>
                 <a href="#" className='flex items-center'>
-                  <span className="material-symbols-outlined scale-150 text-zinc-400 hover:text-zinc-50 transition-colors">more_horiz</span>
+                  <span className="material-symbols-outlined scale-100 md:scale-150 text-zinc-400 hover:text-zinc-50 transition-colors">more_horiz</span>
                 </a>
               </div>
             </div>
           </div>
           <div className='flex flex-col py-6'>
             <h2 className='text-3xl font-bold'>Good afternoon</h2>
-            <section className='grid grid-cols-2 py-6 gap-3'>
+            <section className='grid grid-cols-1 py-6 gap-3 md:grid-cols-2 lg:grid-cols-3'>
               <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
                 <Image src='/Likedsongs.png' width={64} height={64} alt=''></Image>
                 <h3 className='font-extrabold'>Liked Songs</h3>
@@ -120,16 +120,18 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <footer className=' p-3 flex items-center justify-between'>
-        <div className='flex gap-3 items-center'>
-          <Image src='/Album-covers/Sleeptoken.png' className='rounded-md' width={64} height={64} alt=''></Image>
+      <footer className='h-16 px-3 py-10 flex items-center justify-between'>
+        <div className='flex gap-4 items-center'>
+          <div className='hidden md:flex overflow-hidden'>
+            <Image src='/Album-covers/Sleeptoken.png' className='rounded-md' width={52} height={52} alt=''></Image>
+          </div>
           <div className='flex flex-col'>
             <p className='font-medium'>Fall For Me</p>
             <span className='text-xs text-zinc-400'>Sleep Token</span>
           </div>
           <a href="#" className='text-green-500'><span className="material-symbols-outlined scale-75">favorite</span></a>
         </div>
-        <div className='flex flex-col items-center gap-3'>
+        <div className='flex flex-col w-2/6 items-center gap-3'>
           <div className='flex space-x-6 items-center'>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">shuffle</span></a>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">skip_previous</span></a>
@@ -137,8 +139,13 @@ export default function Home() {
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">skip_next</span></a>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">repeat</span></a>
           </div>
-          <div className='bg-zinc-400 w-80 h-1 rounded-full'>
-            <div className='bg-zinc-50 w-24 h-1 rounded-full'></div>
+          
+          <div className='w-full flex items-center space-x-3'>
+            <span className='text-xs text-zinc-400'>0:20</span>
+            <div className='bg-zinc-400 w-full h-1 rounded-full flex-1'>
+              <div className='bg-zinc-50 w-24 h-1 rounded-full'></div>
+            </div>
+            <span className='text-xs text-zinc-400'>2:26</span>
           </div>
         </div>
         <div className='flex space-x-3 items-center'>
@@ -148,7 +155,7 @@ export default function Home() {
           <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">devices</span></a>
           <div className='flex items-center gap-2'>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">volume_up</span></a>
-            <div className='bg-zinc-400 w-24 h-1 rounded-full'>
+            <div className='bg-zinc-400 w-24 h-1 rounded-full hidden md:flex'>
               <div className='bg-zinc-50 w-16 h-1 rounded-full'></div>
             </div>
           </div>
