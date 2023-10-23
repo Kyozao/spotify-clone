@@ -13,7 +13,7 @@ export default function Home() {
               <span className="material-symbols-outlined scale-125">search</span>
             </a>
           </div>
-          <div className='flex flex-1 flex-col bg-zinc-900 rounded-xl p-2 justify-center items-center space-y-6 text-zinc-400'>
+          <div className='flex flex-1 flex-col bg-zinc-900 rounded-xl p-2 py-4 justify-start items-center space-y-6 text-zinc-400'>
             <a href="#">
             <span className="material-symbols-outlined hover:text-zinc-50 transition-colors">book_4</span>
             </a>
@@ -132,12 +132,12 @@ export default function Home() {
           <a href="#" className='text-green-500'><span className="material-symbols-outlined scale-75">favorite</span></a>
         </div>
         <div className='flex flex-col w-2/6 items-center gap-3'>
-          <div className='flex space-x-6 items-center'>
-            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">shuffle</span></a>
-            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">skip_previous</span></a>
-            <a href="#" className='text-zinc-950 bg-zinc-50 flex items-center rounded-full p-0.5 hover:ring ring-2 transition-all ring-zinc-50'><span className="material-symbols-outlined scale-105">play_arrow</span></a>
-            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">skip_next</span></a>
-            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">repeat</span></a>
+          <div className='flex space-x-3 md:space-x-6 items-center'>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75 md:scale-105">shuffle</span></a>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75 md:scale-105">skip_previous</span></a>
+            <a href="#" className='text-zinc-950 bg-zinc-50 flex items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50'><span className="material-symbols-outlined scale-75 md:scale-105">play_arrow</span></a>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75 md:scale-105">skip_next</span></a>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75 md:scale-105">repeat</span></a>
           </div>
           
           <div className='w-full flex items-center space-x-3'>
@@ -149,9 +149,9 @@ export default function Home() {
           </div>
         </div>
         <div className='flex space-x-3 items-center'>
-          <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">smart_display</span></a>
-          <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">mic_external_on</span></a>
-          <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">playlist_play</span></a>
+          <a href="#" className='text-zinc-400 hover:text-zinc-50 hidden md:flex'><span className="material-symbols-outlined scale-75">smart_display</span></a>
+          <a href="#" className='text-zinc-400 hover:text-zinc-50 hidden md:flex'><span className="material-symbols-outlined scale-75">mic_external_on</span></a>
+          <a href="#" className='text-zinc-400 hover:text-zinc-50 hidden md:flex'><span className="material-symbols-outlined scale-75">playlist_play</span></a>
           <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">devices</span></a>
           <div className='flex items-center gap-2'>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">volume_up</span></a>
