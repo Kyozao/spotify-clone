@@ -88,9 +88,30 @@ export default function Home() {
           </div>
           <div className='flex flex-col py-6'>
             <h2 className='text-3xl font-bold'>Good afternoon</h2>
-            <section className='grid grid-cols-2 py-6'>
-              <div>
-                <h3>Liked Songs</h3>
+            <section className='grid grid-cols-2 py-6 gap-3'>
+              <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
+                <Image src='/Likedsongs.png' width={64} height={64} alt=''></Image>
+                <h3 className='font-extrabold'>Liked Songs</h3>
+              </div>
+              <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
+                <Image src='/Album-covers/Bmth.png' width={64} height={64} alt=''></Image>
+                <h3 className='font-extrabold'>Bring Me The Horizon</h3>
+              </div>
+              <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
+                <Image src='/Album-covers/Miw.png' width={64} height={64} alt=''></Image>
+                <h3 className='font-extrabold'>Motionless In White</h3>
+              </div>
+              <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
+                <Image src='/Album-covers/Slipknot.png' width={64} height={64} alt=''></Image>
+                <h3 className='font-extrabold'>Slipknot</h3>
+              </div>
+              <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
+                <Image src='/Album-covers/Bb.png' width={64} height={64} alt=''></Image>
+                <h3 className='font-extrabold'>Breaking Benjamin</h3>
+              </div>
+              <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
+                <Image src='/Album-covers/Sleeptoken.png' width={64} height={64} alt=''></Image>
+                <h3 className='font-extrabold'>Sleep Token</h3>
               </div>
             </section>
           </div>
@@ -99,8 +120,20 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <footer className='h-16'>
-        footer
+      <footer className=' p-3 flex items-center justify-between'>
+        <div className='flex gap-3 items-center'>
+          <Image src='/Album-covers/Sleeptoken.png' className='rounded-md' width={64} height={64} alt=''></Image>
+          <div className='flex flex-col'>
+            <p className='font-medium'>Fall For Me</p>
+            <span className='text-xs text-zinc-400'>Sleep Token</span>
+          </div>
+          <a href="#" className='text-green-500'><span className="material-symbols-outlined scale-75">favorite</span></a>
+        </div>
+        <div className='flex flex-col items-center'>
+          <div>
+            <a href=""><span className="material-symbols-outlined">shuffle</span></a>
+          </div>
+        </div>
       </footer>
     </div>
   )
