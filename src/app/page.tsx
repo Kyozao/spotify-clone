@@ -43,12 +43,47 @@ export default function Home() {
             </a>
           </div>
         </aside>
-        <main className='flex flex-1 bg-zinc-900 rounded-xl '>
-          <div className='flex flex-col gap-3 px-8 pt-12'>
-            <div className='bg-black w-90 h-80 pt-12 flex items-center'>
-              <a>
-                <Image src='/Album-covers/Sleeptoken.png' width={200} height={200} alt=''/>
+        <main className='flex flex-col flex-1 bg-zinc-900 rounded-xl px-5'>
+          <div className='h-12 w-full p-2 my-2 flex justify-between'>
+            <div className='flex space-x-2'>
+              <a href="#" className='bg-black/20 rounded-full flex'>
+                <span className="material-symbols-outlined p-1 scale-75 relative left-0.5">arrow_back_ios</span>
               </a>
+              <a href="#" className='bg-black/20 rounded-full flex'>
+                <span className="material-symbols-outlined p-1 scale-75 relative left-0.5">arrow_forward_ios</span>
+              </a>
+            </div>
+            <div className='flex space-x-2'>
+              <a href="#" className='bg-black/20 rounded-full flex'>
+                <span className="material-symbols-outlined p-1 scale-75 relative left-0.5">notifications</span>
+              </a>
+              <a href="#" className='bg-black/20 rounded-full flex'>
+                <span className="material-symbols-outlined p-1 scale-75 relative left-0.5">groups</span>
+              </a>
+              <a href="#" className='bg-black/20 rounded-full flex'>
+                <span className="material-symbols-outlined p-1 scale-75 relative left-0.5">person</span>
+              </a>
+            </div>
+          </div>
+          <div className='flex bg-black/20 w-full h-80 gap-3 space-x-5 items-center px-5'>
+            <a>
+              <Image src='/Album-covers/Sleeptoken.png' width={312} height={312} alt=''/>
+            </a>
+            <div className='flex flex-col gap-5'>
+              <span className='font-semibold text-sm'>PLAYLIST</span>
+              <h1 className='text-6xl font-bold'>Popular Metal Songs...</h1>
+              <span className='font-medium'>Listen to the most sucessful Metal songs!</span>
+              <div>
+                <button>
+                  Play
+                </button>
+                <button>
+                  Follow
+                </button>
+                <a href="#">
+                  aaa
+                </a>
+              </div>
             </div>
           </div>
           <div>
