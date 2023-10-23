@@ -17,28 +17,28 @@ export default function Home() {
             <a href="#">
             <span className="material-symbols-outlined hover:text-zinc-50 transition-colors">book_4</span>
             </a>
-            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10'>
+            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all'>
               <Image src="/Album-covers/Bmth.png" width={54} height={54} alt=""/>
             </a>
-            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10'>
+            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all'>
               <Image src="/Album-covers/flow.png" width={54} height={54} alt=""/>
             </a>
-            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10'>
+            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all'>
               <Image src="/Album-covers/Slipknot.png" width={54} height={54} alt=""/>
             </a>
-            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10'>
+            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all'>
               <Image src="/Album-covers/Miw.png" width={54} height={54} alt=""/>
             </a>
-            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10'>
+            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all'>
               <Image src="/Album-covers/Sleeptoken.png" width={54} height={54} alt=""/>
             </a>
-            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10'>
+            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all'>
               <Image src="/Album-covers/Bb.png" width={54} height={54} alt=""/>
             </a>
-            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10'>
+            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all'>
               <Image src="/Album-covers/Badomens2.png" width={54} height={54} alt=""/>
             </a>
-            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10'>
+            <a href="#" className='w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all'>
               <Image src="/Album-covers/Badomens.png" width={54} height={54} alt=""/>
             </a>
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className='flex bg-black/20 w-full h-80 gap-3 space-x-5 items-center px-5'>
+          <div className='flex bg-black/20 h-80 gap-3 space-x-5 items-center px-5 mx-auto'>
             <a className=''>
               <Image src='/Album-covers/Sleeptoken.png' className='max-w-sm' width={240} height={240} alt=''/>
             </a>
