@@ -130,8 +130,24 @@ export default function Home() {
           <a href="#" className='text-green-500'><span className="material-symbols-outlined scale-75">favorite</span></a>
         </div>
         <div className='flex flex-col items-center'>
-          <div>
-            <a href=""><span className="material-symbols-outlined">shuffle</span></a>
+          <div className='flex space-x-6 items-center'>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">shuffle</span></a>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">skip_previous</span></a>
+            <a href="#" className='text-zinc-950 bg-zinc-50 flex items-center rounded-full p-1'><span className="material-symbols-outlined scale-105">play_arrow</span></a>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">skip_next</span></a>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">repeat</span></a>
+          </div>
+        </div>
+        <div className='flex space-x-3 items-center'>
+          <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">smart_display</span></a>
+          <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">mic_external_on</span></a>
+          <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">playlist_play</span></a>
+          <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">devices</span></a>
+          <div className='flex items-center gap-2'>
+            <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-75">volume_up</span></a>
+            <div className='bg-zinc-400 w-24 h-1 rounded-full'>
+              <div className='bg-zinc-50 w-16 h-1 rounded-full'></div>
+            </div>
           </div>
         </div>
       </footer>
