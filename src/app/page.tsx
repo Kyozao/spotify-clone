@@ -129,13 +129,16 @@ export default function Home() {
           </div>
           <a href="#" className='text-green-500'><span className="material-symbols-outlined scale-75">favorite</span></a>
         </div>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center gap-3'>
           <div className='flex space-x-6 items-center'>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">shuffle</span></a>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">skip_previous</span></a>
-            <a href="#" className='text-zinc-950 bg-zinc-50 flex items-center rounded-full p-1'><span className="material-symbols-outlined scale-105">play_arrow</span></a>
+            <a href="#" className='text-zinc-950 bg-zinc-50 flex items-center rounded-full p-0.5 hover:ring ring-2 transition-all ring-zinc-50'><span className="material-symbols-outlined scale-105">play_arrow</span></a>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">skip_next</span></a>
             <a href="#" className='text-zinc-400 hover:text-zinc-50'><span className="material-symbols-outlined scale-105">repeat</span></a>
+          </div>
+          <div className='bg-zinc-400 w-80 h-1 rounded-full'>
+            <div className='bg-zinc-50 w-24 h-1 rounded-full'></div>
           </div>
         </div>
         <div className='flex space-x-3 items-center'>
