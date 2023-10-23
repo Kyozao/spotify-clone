@@ -66,28 +66,33 @@ export default function Home() {
             </div>
           </div>
           <div className='flex bg-black/20 w-full h-80 gap-3 space-x-5 items-center px-5'>
-            <a>
-              <Image src='/Album-covers/Sleeptoken.png' width={312} height={312} alt=''/>
+            <a className=''>
+              <Image src='/Album-covers/Sleeptoken.png' className='max-w-sm' width={240} height={240} alt=''/>
             </a>
             <div className='flex flex-col gap-5'>
               <span className='font-semibold text-sm'>PLAYLIST</span>
               <h1 className='text-6xl font-bold'>Popular Metal Songs...</h1>
               <span className='font-medium'>Listen to the most sucessful Metal songs!</span>
-              <div>
-                <button>
+              <div className='flex space-x-8'>
+                <button className='bg-green-500 text-xl px-8 py-3 text-zinc-900 font-medium rounded-full flex justify-center items-center hover:ring-2 ring-green-500'>
                   Play
                 </button>
-                <button>
+                <button className='bg-transparent border border-zinc-400 text-xl px-8 py-3 text-zinc-50 font-medium rounded-full flex justify-center items-center hover:ring-2 ring-zinc-50'>
                   Follow
                 </button>
-                <a href="#">
-                  aaa
+                <a href="#" className='flex items-center'>
+                  <span className="material-symbols-outlined scale-150 text-zinc-400 hover:text-zinc-50 transition-colors">more_horiz</span>
                 </a>
               </div>
             </div>
           </div>
-          <div>
-
+          <div className='flex flex-col py-6'>
+            <h2 className='text-3xl font-bold'>Good afternoon</h2>
+            <section className='grid grid-cols-2 py-6'>
+              <div>
+                <h3>Liked Songs</h3>
+              </div>
+            </section>
           </div>
           <div>
 
