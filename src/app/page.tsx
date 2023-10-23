@@ -65,11 +65,11 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className='flex flex-col md:flex-row bg-black/20 py-12 gap-3 space-x-5 items-center px-5 mx-auto'>
+          <div className='flex flex-col md:flex-row bg-black/20 py-12 gap-3 md:space-x-5 space-y-3 items-center px-5 mx-auto'>
             <a className=''>
               <Image src='/Album-covers/Sleeptoken.png' className='max-w-sm' width={240} height={240} alt=''/>
             </a>
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col mx-0 gap-5'>
               <span className='font-semibold text-sm'>PLAYLIST</span>
               <h1 className='text-3xl md:text-6xl font-bold'>Popular Metal Songs...</h1>
               <span className='font-medium'>Listen to the most sucessful Metal songs!</span>
@@ -81,7 +81,7 @@ export default function Home() {
                   Follow
                 </button>
                 <a href="#" className='flex items-center'>
-                  <span className="material-symbols-outlined scale-100 md:scale-150 text-zinc-400 hover:text-zinc-50 transition-colors">more_horiz</span>
+                  <span className="material-symbols-outlined scale-150 text-zinc-400 hover:text-zinc-50 transition-colors">more_horiz</span>
                 </a>
               </div>
             </div>
