@@ -3,8 +3,11 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className="flex flex-col h-screen p-2 pb-0">
-      <div className='flex flex-1 pt-8 gap-3'>
-        <aside className='flex flex-col w-20 gap-3'>
+      <div className='flex w-full h-10 px-3 text-zinc-50'>
+      <button><span className='material-symbols-outlined scale-125'>menu</span></button>
+      </div>
+      <div className='flex flex-1 gap-3'>
+        <aside className='hidden md:flex flex-col w-20 gap-3'>
           <div className='flex flex-col h-32 bg-zinc-900 rounded-xl p-2 items-center justify-center space-y-6 text-zinc-400'>
             <a href="#" className='hover:text-zinc-50 transition-colors'>
               <span className='material-symbols-outlined scale-125'>home</span>
