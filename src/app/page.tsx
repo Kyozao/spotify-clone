@@ -43,14 +43,14 @@ export default function Home() {
             </a>
           </div>
         </aside>
-        <main className='flex flex-col flex-1 bg-zinc-900 rounded-xl px-5'>
+        <main className='flex flex-col flex-1 bg-gradient-to-t  from-zinc-900 from-40% via-zinc-900 via-60%  to-green-500/50  to-100% rounded-xl px-5'>
           <div className='h-12 w-full p-2 my-2 flex justify-between'>
             <div className='flex space-x-2'>
               <a href="#" className='bg-black/20 rounded-full flex'>
-                <span className="material-symbols-outlined p-1 scale-75 pl-2">arrow_back_ios</span>
+                <span className="material-symbols-outlined p-1 scale-75 relative left-0.5">arrow_back_ios</span>
               </a>
               <a href="#" className='bg-black/20 rounded-full flex'>
-                <span className="material-symbols-outlined p-1 scale-75 pr-2">arrow_forward_ios</span>
+                <span className="material-symbols-outlined p-1 scale-75 ">arrow_forward_ios</span>
               </a>
             </div>
             <div className='flex space-x-2'>
@@ -90,27 +90,27 @@ export default function Home() {
             <h2 className='text-3xl font-bold'>Good afternoon</h2>
             <section className='grid grid-cols-1 py-6 gap-3 md:grid-cols-2 lg:grid-cols-3'>
               <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
-                <Image src='/Likedsongs.png' width={64} height={64} alt=''></Image>
+                <Image src='/Likedsongs.png' width={80} height={80} alt=''></Image>
                 <h3 className='font-extrabold'>Liked Songs</h3>
               </div>
               <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
-                <Image src='/Album-covers/Bmth.png' width={64} height={64} alt=''></Image>
+                <Image src='/Album-covers/Bmth.png' width={80} height={80} alt=''></Image>
                 <h3 className='font-extrabold'>Bring Me The Horizon</h3>
               </div>
               <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
-                <Image src='/Album-covers/Miw.png' width={64} height={64} alt=''></Image>
+                <Image src='/Album-covers/Miw.png' width={80} height={80} alt=''></Image>
                 <h3 className='font-extrabold'>Motionless In White</h3>
               </div>
               <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
-                <Image src='/Album-covers/Slipknot.png' width={64} height={64} alt=''></Image>
+                <Image src='/Album-covers/Slipknot.png' width={80} height={80} alt=''></Image>
                 <h3 className='font-extrabold'>Slipknot</h3>
               </div>
               <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
-                <Image src='/Album-covers/Bb.png' width={64} height={64} alt=''></Image>
+                <Image src='/Album-covers/Bb.png' width={80} height={80} alt=''></Image>
                 <h3 className='font-extrabold'>Breaking Benjamin</h3>
               </div>
               <div className='flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer'>
-                <Image src='/Album-covers/Sleeptoken.png' width={64} height={64} alt=''></Image>
+                <Image src='/Album-covers/Sleeptoken.png' width={80} height={80} alt=''></Image>
                 <h3 className='font-extrabold'>Sleep Token</h3>
               </div>
             </section>
