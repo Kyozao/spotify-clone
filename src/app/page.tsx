@@ -139,9 +139,6 @@ export default function Home() {
           <a href="#" className='text-zinc-400 hover:text-zinc-50 flex'><span className="material-symbols-outlined scale-75">devices</span></a>
           <div className='flex items-center gap-2'>
             <a href="#" className='text-zinc-400 hover:text-zinc-50 flex'><span className="material-symbols-outlined scale-75">volume_up</span></a>
-            <div className='bg-zinc-400 w-24 h-1 rounded-full flex md:hidden'>
-              <div className='bg-zinc-50 w-16 h-1 rounded-full'></div>
-            </div>
           </div>
         </div>
         <div className='hidden md:flex flex-col md:w-2/6 items-center gap-3'>
