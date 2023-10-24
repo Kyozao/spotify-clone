@@ -76,7 +76,7 @@ export default function Home() {
               <span className='font-semibold text-sm'>PLAYLIST</span>
               <h1 className='text-3xl md:text-6xl font-bold'>Popular Metal Songs...</h1>
               <span className='font-medium'>Listen to the most sucessful Metal songs!</span>
-              <div className='flex flex-col space-y-4 md:space-x-8'>
+              <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8'>
                 <button className='bg-green-500 text-xl px-8 py-3 text-zinc-900 font-medium rounded-full flex justify-center items-center hover:ring-2 ring-green-500'>
                   Play
                 </button>
