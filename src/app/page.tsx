@@ -3,8 +3,8 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className="flex flex-col h-screen p-2 pb-0">
-      <div className='flex w-full h-10 px-3 text-zinc-50'>
-      <button><span className='material-symbols-outlined scale-125'>menu</span></button>
+      <div className='flex md:hidden w-full h-10 px-3 text-zinc-50'>
+      <button><span className='material-symbols-outlined scale-125 '>menu</span></button>
       </div>
       <div className='flex flex-1 gap-3'>
         <aside className='hidden md:flex flex-col w-20 gap-3'>
@@ -134,7 +134,7 @@ export default function Home() {
           </div>
           <a href="#" className='text-green-500 hidden md:flex'><span className="material-symbols-outlined scale-75">favorite</span></a>
         </div>
-        <div className='flex md:hidden space-x-3'>
+        <div className='flex md:hidden space-x-5'>
           <a href="#" className='text-zinc-950 bg-zinc-50 flex md:hidden items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 '><span className="material-symbols-outlined scale-75 md:scale-105">play_arrow</span></a>
           <a href="#" className='text-zinc-400 hover:text-zinc-50 flex'><span className="material-symbols-outlined scale-75">devices</span></a>
           <div className='flex items-center gap-2'>
