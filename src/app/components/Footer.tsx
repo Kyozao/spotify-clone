@@ -4,7 +4,11 @@ import PlayingNow from "./PlayingNow";
 function Footer() {
   return (
     <footer className="h-16 px-3 py-5 md:py-10 flex md:items-center justify-between">
-      <PlayingNow></PlayingNow>
+      <PlayingNow 
+      song='Fall For Me'
+      artist='Sleep Token'
+      img='/Album-covers/Sleeptoken.png'>
+      </PlayingNow>
       <div className="flex md:hidden space-x-5">
         <a
           href="#"
