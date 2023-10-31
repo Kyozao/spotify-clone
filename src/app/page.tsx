@@ -4,6 +4,7 @@ import SideBar from "./components/SideBar";
 import Topics from "./components/Topics";
 import Highlight from "./components/Highlight";
 import Menu from "./components/Menu";
+import Card from "./components/Card";
 
 export default function Home() {
   return (
@@ -22,11 +23,15 @@ export default function Home() {
             subtitle="Listen to the most sucessful Metal songs!"
             img="/Album-covers/Sleeptokenbig.jpg"
           ></Highlight>
-          <div className="flex flex-col py-6">
+          <div className="flex flex-col pt-6">
             <h2 className="text-3xl font-bold">Good afternoon</h2>
             <Topics></Topics>
           </div>
-          <div></div>
+          {/*Cards Here*/}
+          <div className="flex flex-col pt-6">
+            <h2 className="text-3xl font-bold">Made For You</h2>
+            <Card></Card>
+          </div>
         </main>
       </div>
       <Footer />
