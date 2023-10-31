@@ -16,7 +16,7 @@ function Footer() {
       <div className="flex md:hidden space-x-5">
         <button
           className="text-zinc-950 bg-zinc-50 flex md:hidden items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 "
-          onClick={PlayButton()}
+          
         >
           <span className="material-symbols-outlined scale-75 md:scale-105">
             play_arrow
