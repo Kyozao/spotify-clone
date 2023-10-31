@@ -6,7 +6,10 @@ export default function Card() {
     <div className="flex gap-5 py-6">
       {AlbumImages.slice(0, 7).map(function (item) {
         return (
-          <div className="flex flex-col bg-zinc-800 p-3 rounded-md" key={item}>
+          <div
+            className="flex flex-col bg-zinc-800 p-3 rounded-md hover:bg-zinc-700 transition-all"
+            key={item}
+          >
             <a href="">
               <Image
                 src={item.src}

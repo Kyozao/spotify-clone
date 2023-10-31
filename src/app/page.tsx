@@ -29,7 +29,12 @@ export default function Home() {
           </div>
           {/*Cards Here*/}
           <div className="flex flex-col pt-6">
-            <h2 className="text-3xl font-bold">Made For You</h2>
+            <div className="flex justify-between items-center">
+              <h2 className="text-3xl font-bold">Made For You</h2>
+              <a href="" className="text-base font-semibold text-zinc-400">
+                Show all
+              </a>
+            </div>
             <Card></Card>
           </div>
         </main>
