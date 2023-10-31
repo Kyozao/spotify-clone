@@ -63,7 +63,7 @@ function SideBar() {
           return (
             <a
               href="#"
-              className="w-14 h-14 rounded-xl overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all"
+              className="w-14 h-14 rounded-md overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all"
               key={item.id}
             >
               <Image src={item.src} width={54} height={54} alt={item.alt} />
