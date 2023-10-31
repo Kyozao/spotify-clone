@@ -13,7 +13,7 @@ function Footer() {
         <a
           href="#"
           className="text-zinc-950 bg-zinc-50 flex md:hidden items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 "
-        >
+        >           
           <span className="material-symbols-outlined scale-75 md:scale-105">
             play_arrow
           </span>
@@ -81,7 +81,7 @@ function Footer() {
           <span className="text-xs text-zinc-400 hidden md:flex">2:26</span>
         </div>
       </div>
-      <div className="hidden md:flex space-x-3 items-center px-3">
+      <div className="hidden md:flex space-x-3 items-center mx-10">
         <a href="#" className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
           <span className="material-symbols-outlined scale-75">
             smart_display
