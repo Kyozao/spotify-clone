@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function PlayingNow(props) {
+export default function PlayingNow(props: any) {
   return (
     <div className="flex gap-4 items-center">
       <div className="flex overflow-hidden">

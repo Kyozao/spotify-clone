@@ -3,12 +3,12 @@ import PlayingNow from "./PlayingNow";
 
 function Footer() {
   return (
-    <footer className="h-16 px-3 py-5 md:py-10 flex md:items-center justify-between">
-      <PlayingNow 
-      song='Fall For Me'
-      artist='Sleep Token'
-      img='/Album-covers/Sleeptoken.png'>
-      </PlayingNow>
+    <footer className="h-16 w-screen bg-zinc-950 px-3 py-5 md:py-10 flex md:items-center justify-between bottom-0 fixed">
+      <PlayingNow
+        song="Fall For Me"
+        artist="Sleep Token"
+        img="/Album-covers/Sleeptoken.png"
+      ></PlayingNow>
       <div className="flex md:hidden space-x-5">
         <a
           href="#"
@@ -81,7 +81,7 @@ function Footer() {
           <span className="text-xs text-zinc-400 hidden md:flex">2:26</span>
         </div>
       </div>
-      <div className="hidden md:flex space-x-3 items-center">
+      <div className="hidden md:flex space-x-3 items-center px-3">
         <a href="#" className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
           <span className="material-symbols-outlined scale-75">
             smart_display
