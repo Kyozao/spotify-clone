@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Highlight(props) {
   return (
-    <div className="flex flex-col md:flex-row bg-black/20 py-12 gap-3 md:space-x-5 space-y-3 items-center px-5 mx-auto">
+    <div className="flex flex-col md:flex-row bg-black/50 py-12 gap-3 md:space-x-5 space-y-3 items-center px-5 mx-auto">
       <a className="">
         <Image
           src={props.img}

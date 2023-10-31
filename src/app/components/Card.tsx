@@ -7,8 +7,8 @@ export default function Card() {
       {AlbumImages.slice(0, 7).map(function (item) {
         return (
           <div
-            className="flex flex-col bg-zinc-800 p-3 rounded-md hover:bg-zinc-700 transition-all"
-            key={item}
+            className="flex flex-col bg-zinc-800 p-4 rounded-md hover:bg-zinc-700 transition-all"
+            key={item.id}
           >
             <a href="">
               <Image
