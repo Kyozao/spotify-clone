@@ -1,6 +1,10 @@
 import Image from "next/image";
 import PlayingNow from "./PlayingNow";
 
+function PlayButton() {
+  console.log("Clicked");
+}
+
 function Footer() {
   return (
     <footer className="h-16 w-screen bg-zinc-950 px-3 py-5 md:py-10 flex md:items-center justify-between bottom-0 fixed">
@@ -10,14 +14,14 @@ function Footer() {
         img="/Album-covers/Sleeptoken.png"
       ></PlayingNow>
       <div className="flex md:hidden space-x-5">
-        <a
-          href="#"
+        <button
           className="text-zinc-950 bg-zinc-50 flex md:hidden items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 "
-        >           
+          onClick={PlayButton()}
+        >
           <span className="material-symbols-outlined scale-75 md:scale-105">
             play_arrow
           </span>
-        </a>
+        </button>
         <a href="#" className="text-zinc-400 hover:text-zinc-50 flex">
           <span className="material-symbols-outlined scale-75">devices</span>
         </a>
@@ -47,14 +51,14 @@ function Footer() {
               skip_previous
             </span>
           </a>
-          <a
-            href="#"
+          <button
             className="text-zinc-950 bg-zinc-50 hidden md:flex items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 "
+            onClick={PlayButton()}
           >
             <span className="material-symbols-outlined scale-75 md:scale-105">
               play_arrow
             </span>
-          </a>
+          </button>
           <a
             href="#"
             className="text-zinc-400 hover:text-zinc-50 hidden md:flex"
