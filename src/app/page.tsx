@@ -63,10 +63,10 @@ export default function Home() {
                 Listen to the most sucessful Metal songs!
               </span>
               <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-                <button className="bg-green-500 text-xl px-8 py-3 text-zinc-900 font-medium rounded-full flex justify-center items-center hover:ring-2 ring-green-500">
+                <button className="bg-green-500 text-xl px-8 py-3 text-zinc-900 font-medium rounded-full flex justify-center items-center hover:scale-105 ring-green-500">
                   Play
                 </button>
-                <button className="bg-transparent border border-zinc-400 text-xl px-8 py-3 text-zinc-50 font-medium rounded-full flex justify-center items-center hover:ring-2 ring-zinc-50">
+                <button className="bg-transparent border border-zinc-400 text-xl px-8 py-3 text-zinc-50 font-medium rounded-full flex justify-center items-center hover:scale-105 hover:ring-1 ring-zinc-50">
                   Follow
                 </button>
                 <a href="#" className="flex items-center justify-center">
