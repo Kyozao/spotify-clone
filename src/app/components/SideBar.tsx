@@ -1,5 +1,5 @@
 import Image from "next/image";
-let AlbumImages = [
+export let AlbumImages = [
   {
     id: 1,
     src: "/Album-covers/Bmth.png",

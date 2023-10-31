@@ -1,10 +1,6 @@
 import Image from "next/image";
 import PlayingNow from "./PlayingNow";
 
-function PlayButton() {
-  console.log("Clicked");
-}
-
 function Footer() {
   return (
     <footer className="h-16 w-screen bg-zinc-950 px-3 py-5 md:py-10 flex md:items-center justify-between bottom-0 fixed">
@@ -48,9 +44,7 @@ function Footer() {
               skip_previous
             </span>
           </a>
-          <button
-            className="text-zinc-950 bg-zinc-50 hidden md:flex items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 "
-          >
+          <button className="text-zinc-950 bg-zinc-50 hidden md:flex items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 ">
             <span className="material-symbols-outlined scale-75 md:scale-105">
               play_arrow
             </span>
@@ -81,7 +75,7 @@ function Footer() {
           <span className="text-xs text-zinc-400 hidden md:flex">2:26</span>
         </div>
       </div>
-      <div className="hidden md:flex space-x-3 items-center mx-10">
+      <div className="hidden md:flex space-x-3 items-center ">
         <a href="#" className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
           <span className="material-symbols-outlined scale-75">
             smart_display
