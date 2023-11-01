@@ -1,7 +1,12 @@
+"use client";
 import Image from "next/image";
 import PlayingNow from "./PlayingNow";
 
 function Footer() {
+  const playButton = () => {
+    console.log("Clicked");
+  };
+
   return (
     <footer className="h-16 w-full bg-zinc-950 px-3 py-5 md:py-10 flex md:items-center justify-between bottom-0 left-0 right-0 sticky">
       <PlayingNow
@@ -44,7 +49,10 @@ function Footer() {
               skip_previous
             </span>
           </a>
-          <button className="text-zinc-950 bg-zinc-50 hidden md:flex items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 ">
+          <button
+            className="text-zinc-950 bg-zinc-50 hidden md:flex items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 "
+            onClick={playButton}
+          >
             <span className="material-symbols-outlined scale-75 md:scale-105">
               play_arrow
             </span>
