@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <div className="flex flex-1 gap-2">
         <SideBar />
-        <main className="flex flex-col flex-1 bg-gradient-to-t  from-zinc-900 from-40% via-zinc-900 via-60%  to-green-500/50  to-100% rounded-xl px-5">
+        <main className="flex flex-col flex-1 bg-gradient-to-t  from-neutral-950 from-70% via-neufrom-neutral-950 via-60%  to-green-500/50  to-100% rounded-xl px-5">
           <Menu></Menu>
           <Highlight
             title="Popular Metal Songs..."

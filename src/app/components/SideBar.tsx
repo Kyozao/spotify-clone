@@ -45,7 +45,7 @@ export let AlbumImages = [
 function SideBar() {
   return (
     <aside className="hidden md:flex flex-col w-20 gap-3">
-      <div className="flex flex-col h-32 bg-zinc-900 rounded-xl p-2 items-center justify-center space-y-6 text-zinc-400">
+      <div className="flex flex-col h-32 bg-neutral-950 rounded-xl p-2 items-center justify-center space-y-6 text-zinc-400">
         <a href="#" className="hover:text-zinc-50 transition-colors">
           <span className="material-symbols-outlined scale-125">home</span>
         </a>
@@ -53,9 +53,9 @@ function SideBar() {
           <span className="material-symbols-outlined scale-125">search</span>
         </a>
       </div>
-      <div className="flex flex-1 flex-col bg-zinc-900 rounded-xl p-2 py-4 justify-start items-center space-y-6 text-zinc-400">
+      <div className="flex flex-1 flex-col bg-neutral-950 rounded-xl p-2 py-4 justify-start items-center space-y-6 text-zinc-400">
         <a href="#">
-          <span className="material-symbols-outlined hover:text-zinc-50 transition-colors">
+          <span className="material-symbols-rounded hover:text-zinc-50 transition-colors">
             book_4
           </span>
         </a>

@@ -6,7 +6,7 @@ import PlayButton from "./PlayButton";
 
 function Footer() {
   return (
-    <footer className="h-16 w-full bg-zinc-950 px-3 py-5 md:py-10 flex md:items-center justify-between bottom-0 left-0 right-0 sticky">
+    <footer className="h-16 w-full bg-black px-3 py-5 md:py-10 flex md:items-center justify-between bottom-0 left-0 right-0 sticky">
       <PlayingNow
         song="Fall For Me"
         artist="Sleep Token"
