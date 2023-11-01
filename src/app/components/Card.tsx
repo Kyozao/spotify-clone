@@ -4,7 +4,7 @@ import { AlbumImages } from "./SideBar";
 export default function Card() {
   return (
     <div className="flex gap-5 py-6">
-      {AlbumImages.slice(0, 7).map(function (item) {
+      {AlbumImages.slice(0, 1).map(function (item) {
         return (
           <div
             className="flex flex-col bg-zinc-800 p-4 rounded-md hover:bg-zinc-700 transition-all"
