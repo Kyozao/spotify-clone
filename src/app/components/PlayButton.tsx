@@ -15,7 +15,7 @@ export default function PlayButton() {
       className="text-zinc-950 bg-zinc-50 hidden md:flex items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 "
       onClick={toggleButton}
     >
-      <span className="material-symbols-outlined scale-75 md:scale-105">
+      <span className="material-symbols-rounded scale-75 md:scale-105">
         {playButton}
       </span>
     </button>
