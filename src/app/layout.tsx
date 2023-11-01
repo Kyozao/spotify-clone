@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "material-symbols";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
-        />
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
       </head>
       <body className="bg-zinc-950 text-zinc-50">{children}</body>

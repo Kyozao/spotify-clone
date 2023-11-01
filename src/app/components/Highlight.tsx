@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Highlight(props: any) {
   const [playHighlight, setPlayHighlight] = useState("Play");

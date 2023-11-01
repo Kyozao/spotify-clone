@@ -9,11 +9,11 @@ export default function Topics() {
         <Image src="/Likedsongs.png" width={80} height={80} alt=""></Image>
         <h3 className="font-extrabold">Liked Songs</h3>
       </div>
-      {AlbumImages.slice(0, 5).map(function (item: any) {
+      {AlbumImages.slice(0, 5).map(function (item, index) {
         return (
           <div
             className="flex rounded-md overflow-hidden items-center space-x-4 bg-zinc-800 hover:bg-zinc-700 transition-colors cursor-pointer"
-            key={item}
+            key={index}
           >
             <Image src={item.src} width={80} height={80} alt={item.alt}></Image>
             <h3 className="font-extrabold">{item.alt}</h3>

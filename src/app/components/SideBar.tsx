@@ -59,12 +59,12 @@ function SideBar() {
             book_4
           </span>
         </a>
-        {AlbumImages.map(function (item) {
+        {AlbumImages.map(function (item, index) {
           return (
             <a
               href="#"
               className="w-14 h-14 rounded-md overflow-hidden hover:ring-8 hover:ring-zinc-400/10 transition-all"
-              key={item.id}
+              key={index}
             >
               <Image src={item.src} width={54} height={54} alt={item.alt} />
             </a>
