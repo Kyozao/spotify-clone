@@ -33,13 +33,13 @@ function Footer() {
             </span>
           </button>
           <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
-            <span className="material-symbols-outlined scale-75 md:scale-105">
+            <span className="material-symbols-rounded scale-75 md:scale-105">
               skip_previous
             </span>
           </button>
           <PlayButton></PlayButton>
           <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
-            <span className="material-symbols-outlined scale-75 md:scale-105">
+            <span className="material-symbols-rounded scale-75 md:scale-105">
               skip_next
             </span>
           </button>
