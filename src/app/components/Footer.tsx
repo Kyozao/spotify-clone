@@ -13,11 +13,7 @@ function Footer() {
         img="/Album-covers/Sleeptoken.png"
       ></PlayingNow>
       <div className="flex md:hidden space-x-5">
-        <button className="text-zinc-950 bg-zinc-50 flex md:hidden items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 ">
-          <span className="material-symbols-outlined scale-75 md:scale-105">
-            play_arrow
-          </span>
-        </button>
+        <PlayButton></PlayButton>
         <button className="text-zinc-400 hover:text-zinc-50 flex">
           <span className="material-symbols-outlined scale-75">devices</span>
         </button>
