@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AlbumImages } from "./SideBar";
+import Card from "./Card";
 
 export default function Topics() {
   return (
