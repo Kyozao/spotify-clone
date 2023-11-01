@@ -1,12 +1,10 @@
 "use client";
 import Image from "next/image";
 import PlayingNow from "./PlayingNow";
+import { useState } from "react";
+import PlayButton from "./PlayButton";
 
 function Footer() {
-  const playButton = () => {
-    console.log("Clicked");
-  };
-
   return (
     <footer className="h-16 w-full bg-zinc-950 px-3 py-5 md:py-10 flex md:items-center justify-between bottom-0 left-0 right-0 sticky">
       <PlayingNow
@@ -20,61 +18,41 @@ function Footer() {
             play_arrow
           </span>
         </button>
-        <a href="#" className="text-zinc-400 hover:text-zinc-50 flex">
+        <button className="text-zinc-400 hover:text-zinc-50 flex">
           <span className="material-symbols-outlined scale-75">devices</span>
-        </a>
+        </button>
         <div className="flex items-center gap-2">
-          <a href="#" className="text-zinc-400 hover:text-zinc-50 flex">
+          <button className="text-zinc-400 hover:text-zinc-50 flex">
             <span className="material-symbols-outlined scale-75">
               volume_up
             </span>
-          </a>
+          </button>
         </div>
       </div>
       <div className="hidden md:flex flex-col md:w-2/6 items-center gap-3">
         <div className="flex space-x-3 md:space-x-6 items-center">
-          <a
-            href="#"
-            className="text-zinc-400 hover:text-zinc-50 hidden md:flex"
-          >
+          <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
             <span className="material-symbols-outlined scale-75 md:scale-105">
               shuffle
             </span>
-          </a>
-          <a
-            href="#"
-            className="text-zinc-400 hover:text-zinc-50 hidden md:flex"
-          >
+          </button>
+          <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
             <span className="material-symbols-outlined scale-75 md:scale-105">
               skip_previous
             </span>
-          </a>
-          <button
-            className="text-zinc-950 bg-zinc-50 hidden md:flex items-center rounded-full md:p-0.5 hover:ring ring-2 transition-all ring-zinc-50 "
-            onClick={playButton}
-          >
-            <span className="material-symbols-outlined scale-75 md:scale-105">
-              play_arrow
-            </span>
           </button>
-          <a
-            href="#"
-            className="text-zinc-400 hover:text-zinc-50 hidden md:flex"
-          >
+          <PlayButton></PlayButton>
+          <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
             <span className="material-symbols-outlined scale-75 md:scale-105">
               skip_next
             </span>
-          </a>
-          <a
-            href="#"
-            className="text-zinc-400 hover:text-zinc-50 hidden md:flex"
-          >
+          </button>
+          <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
             <span className="material-symbols-outlined scale-75 md:scale-105">
               repeat
             </span>
-          </a>
+          </button>
         </div>
-
         <div className="w-full flex items-center space-x-3">
           <span className="text-xs text-zinc-400 hidden md:flex">0:20</span>
           <div className="bg-zinc-400 w-full h-1 rounded-full flex-1 hidden md:flex">
@@ -84,33 +62,30 @@ function Footer() {
         </div>
       </div>
       <div className="hidden md:flex space-x-3 items-center ">
-        <a href="#" className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
+        <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
           <span className="material-symbols-outlined scale-75">
             smart_display
           </span>
-        </a>
-        <a href="#" className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
+        </button>
+        <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
           <span className="material-symbols-outlined scale-75">
             mic_external_on
           </span>
-        </a>
-        <a href="#" className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
+        </button>
+        <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
           <span className="material-symbols-outlined scale-75">
             playlist_play
           </span>
-        </a>
-        <a href="#" className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
+        </button>
+        <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
           <span className="material-symbols-outlined scale-75">devices</span>
-        </a>
+        </button>
         <div className="flex items-center gap-2">
-          <a
-            href="#"
-            className="text-zinc-400 hover:text-zinc-50 hidden md:flex"
-          >
+          <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
             <span className="material-symbols-outlined scale-75">
               volume_up
             </span>
-          </a>
+          </button>
           <div className="bg-zinc-400 w-24 h-1 rounded-full hidden md:flex">
             <div className="bg-zinc-50 w-16 h-1 rounded-full"></div>
           </div>
