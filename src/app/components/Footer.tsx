@@ -4,13 +4,18 @@ import PlayingNow from "./PlayingNow";
 import { useState } from "react";
 import PlayButton from "./PlayButton";
 
-function Footer() {
+function Footer(props: any) {
+  let active = props.active;
+  const toggleActive = props.toggleActive;
+
   return (
     <footer className="h-16 w-full bg-black px-3 py-5 md:py-10 flex md:items-center justify-between bottom-0 left-0 right-0 sticky">
       <PlayingNow
         song="Fall For Me"
         artist="Sleep Token"
         img="/Album-covers/Sleeptoken.png"
+        active={active}
+        toggleActive={toggleActive}
       ></PlayingNow>
       <div className="flex md:hidden space-x-5">
         <PlayButton></PlayButton>

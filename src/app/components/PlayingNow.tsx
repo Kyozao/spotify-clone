@@ -1,12 +1,8 @@
+"use client";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function PlayingNow(props: any) {
-  const [active, setActive] = useState(false);
-  const toggleActive = () => {
-    setActive(!active);
-  };
-
   return (
     <div className="flex gap-4 items-center">
       <div className="flex overflow-hidden">
@@ -24,11 +20,11 @@ export default function PlayingNow(props: any) {
       </div>
       <button
         className={
-          active === true
-            ? "text-zinc-400 hidden md:flex active transition-all"
-            : "text-zinc-400 hidden md:flex"
+          props.active === true
+            ? "text-green-500 hidden md:flex scale-110 active transition-all duration-500"
+            : "text-zinc-400 hidden md:flex transition-all"
         }
-        onClick={toggleActive}
+        onClick={props.toggleActive}
       >
         <span className="material-symbols-outlined scale-75">favorite</span>
       </button>

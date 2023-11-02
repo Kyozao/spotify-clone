@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
@@ -5,8 +6,15 @@ import Topics from "./components/Topics";
 import Highlight from "./components/Highlight";
 import Menu from "./components/Menu";
 import Card from "./components/Card";
+import { act } from "react-dom/test-utils";
+import { useState } from "react";
 
 export default function Home() {
+  const [active, setActive] = useState(false);
+  const toggleActive = () => {
+    setActive(!active);
+  };
+
   return (
     <div className="flex flex-col h-screen p-2 pb-0">
       <div className="flex md:hidden w-full h-10 px-3 text-zinc-50">
@@ -24,7 +32,7 @@ export default function Home() {
             img="/Album-covers/Sleeptokenbig.jpg"
           ></Highlight>
           <div className="flex flex-col pt-6">
-            <h2 className="text-3xl font-bold">Good afternoon</h2>
+            <h2 className="text-3xl font-bold">Good Afternoon</h2>
             <Topics></Topics>
           </div>
           {/*Cards Here*/}
@@ -39,7 +47,7 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <Footer />
+      <Footer active={active} toggleActive={toggleActive} />
     </div>
   );
 }
