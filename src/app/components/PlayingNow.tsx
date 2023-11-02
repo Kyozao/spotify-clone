@@ -25,7 +25,7 @@ export default function PlayingNow(props: any) {
       <button
         className={
           active === true
-            ? "text-zinc-400 hidden md:flex active"
+            ? "text-zinc-400 hidden md:flex active transition-all"
             : "text-zinc-400 hidden md:flex"
         }
         onClick={toggleActive}
