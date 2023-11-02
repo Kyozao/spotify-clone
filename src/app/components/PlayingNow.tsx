@@ -1,6 +1,12 @@
 import Image from "next/image";
+import { useState } from "react";
 
 export default function PlayingNow(props: any) {
+  const [active, setActive] = useState(false);
+  const toggleActive = () => {
+    setActive(!active);
+  };
+
   return (
     <div className="flex gap-4 items-center">
       <div className="flex overflow-hidden">
@@ -16,9 +22,16 @@ export default function PlayingNow(props: any) {
         <p className="font-medium">{props.song}</p>
         <span className="text-xs text-zinc-400">{props.artist}</span>
       </div>
-      <a href="#" className="text-green-500 hidden md:flex">
+      <button
+        className={
+          active === true
+            ? "text-zinc-400 hidden md:flex active"
+            : "text-zinc-400 hidden md:flex"
+        }
+        onClick={toggleActive}
+      >
         <span className="material-symbols-outlined scale-75">favorite</span>
-      </a>
+      </button>
     </div>
   );
 }
