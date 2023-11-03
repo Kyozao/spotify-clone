@@ -1,8 +1,16 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { MouseEventHandler, useState } from "react";
 
-export default function PlayingNow(props: any) {
+interface PlayingNowProps {
+  img: string;
+  song: string;
+  artist: string;
+  active: boolean;
+  toggleActive: MouseEventHandler;
+}
+
+export default function PlayingNow(props: PlayingNowProps) {
   return (
     <div className="flex gap-4 items-center">
       <div className="flex overflow-hidden">

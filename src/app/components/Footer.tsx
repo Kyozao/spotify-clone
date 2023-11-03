@@ -1,10 +1,15 @@
 "use client";
 import Image from "next/image";
 import PlayingNow from "./PlayingNow";
-import { useState } from "react";
+import { MouseEventHandler, useState } from "react";
 import PlayButton from "./PlayButton";
 
-function Footer(props: any) {
+interface FooterProps {
+  active: boolean;
+  toggleActive: MouseEventHandler;
+}
+
+function Footer(props: FooterProps) {
   let active = props.active;
   const toggleActive = props.toggleActive;
 

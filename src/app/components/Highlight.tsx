@@ -2,7 +2,13 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function Highlight(props: any) {
+interface HighlightProps {
+  img: string;
+  title: string;
+  subtitle: string;
+}
+
+export default function Highlight(props: HighlightProps) {
   const [playHighlight, setPlayHighlight] = useState("Play");
   const toggleButton = () => {
     if (playHighlight === "Play") {
