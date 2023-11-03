@@ -67,7 +67,7 @@ function Footer(props: FooterProps) {
           <span className="text-xs text-zinc-400 hidden md:flex">2:26</span>
         </div>
       </div>
-      <div className="hidden md:flex space-x-3 items-center ">
+      <div className="hidden md:flex space-x-1 items-center ">
         <button className="text-zinc-400 hover:text-zinc-50 hidden md:flex">
           <span className="material-symbols-outlined scale-75">
             smart_display
@@ -92,7 +92,7 @@ function Footer(props: FooterProps) {
               volume_up
             </span>
           </button>
-          <div className="bg-zinc-400 w-24 h-1 rounded-full hidden md:flex">
+          <div className="bg-zinc-400 w-20 h-1 rounded-full hidden md:flex">
             <div className="bg-zinc-50 w-16 h-1 rounded-full"></div>
           </div>
         </div>

@@ -1,12 +1,10 @@
 "use client";
-import Image from "next/image";
 import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
 import Topics from "./components/Topics";
 import Highlight from "./components/Highlight";
 import Menu from "./components/Menu";
 import Card from "./components/Card";
-import { act } from "react-dom/test-utils";
 import { useState } from "react";
 
 export default function Home() {
