@@ -10,6 +10,11 @@ import { act } from "react-dom/test-utils";
 import { useState } from "react";
 
 export default function Home() {
+  const [active, setActive] = useState(false);
+  const toggleActive = () => {
+    setActive(!active);
+  };
+
   return (
     <div className="flex flex-col h-screen p-2 pb-0">
       <div className="flex md:hidden w-full h-10 px-3 text-zinc-50">
