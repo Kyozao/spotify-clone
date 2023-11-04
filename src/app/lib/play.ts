@@ -1,15 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-let playButtonStatus = false
+interface active {
+    value: string,
+}
+
+const initialState: active = {
+    value: "play_arrow",
+}
 
 export const playButton = createSlice({
     name: "playButton",
-    initialState: {value: {active: false}},
+    initialState,
     reducers: {
-        togglePlayButton: (state, action) => {
-            state.value = !playButtonStatus
+        togglePlayButton: (state) => {
+            state.value = initialState.value === "play_arrow" ? "pause" : "play_arrow"
         }
     }
 })
+
+export const { togglePlayButton } = playButton.actions;
 
 export default playButton.reducer;
