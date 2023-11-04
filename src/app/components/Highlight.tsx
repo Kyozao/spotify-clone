@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../page";
+import play, { togglePlayButton } from "../lib/play";
 
 interface HighlightProps {
   img: string;
@@ -8,11 +11,19 @@ interface HighlightProps {
 }
 
 export default function Highlight(props: HighlightProps) {
+  const playButton = useSelector((state: RootState) => state.playButton.value);
+  const dispatch = useDispatch();
   const [playHighlight, setPlayHighlight] = useState("Play");
   const toggleButton = () => {
-    if (playHighlight === "Play") {
+    if (playHighlight === "Play" && playButton === "play_arrow") {
       setPlayHighlight("Pause");
-    } else {
+      dispatch(togglePlayButton());
+    } else if (playHighlight === "Play" && playButton === "pause") {
+      setPlayHighlight("Play");
+    } else if (playHighlight === "Pause" && playButton === "pause") {
+      setPlayHighlight("Play");
+      dispatch(togglePlayButton());
+    } else if (playHighlight === "Pause" && playButton === "play_arrow") {
       setPlayHighlight("Play");
     }
   };

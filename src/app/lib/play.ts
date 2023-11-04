@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-interface active {
+interface status {
     value: string,
 }
 
-const initialState: active = {
+const initialState: status = {
     value: "play_arrow",
 }
 
@@ -13,7 +13,7 @@ export const playButton = createSlice({
     initialState,
     reducers: {
         togglePlayButton: (state) => {
-            state.value = initialState.value === "play_arrow" ? "pause" : "play_arrow"
+            state.value = state.value === "play_arrow" ? "pause" : "play_arrow"
         }
     }
 })
