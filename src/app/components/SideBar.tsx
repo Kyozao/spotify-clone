@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 export let AlbumImages = [
   {
     id: 1,
@@ -47,19 +46,19 @@ function SideBar() {
   return (
     <aside className="hidden md:flex flex-col w-20 gap-3">
       <div className="flex flex-col h-32 bg-neutral-950 rounded-xl p-2 items-center justify-center space-y-6 text-zinc-400">
-        <Link href="#" className="hover:text-zinc-50 transition-colors">
+        <a href="#" className="hover:text-zinc-50 transition-colors">
           <span className="material-symbols-outlined scale-125">home</span>
-        </Link>
-        <Link href="#" className="hover:text-zinc-50 transition-colors">
+        </a>
+        <a href="#" className="hover:text-zinc-50 transition-colors">
           <span className="material-symbols-outlined scale-125">search</span>
-        </Link>
+        </a>
       </div>
       <div className="flex flex-1 flex-col bg-neutral-950 rounded-xl p-2 py-4 justify-start items-center space-y-6 text-zinc-400">
-        <Link href="#">
+        <a href="#">
           <span className="material-symbols-rounded hover:text-zinc-50 transition-colors">
             book_4
           </span>
-        </Link>
+        </a>
         {AlbumImages.map(function (item, index) {
           return (
             <a

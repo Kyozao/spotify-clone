@@ -19,6 +19,7 @@ export default function Home() {
     setActive(!active);
   };
   return (
+    <div className="flex flex-col h-screen p-2 pb-0">
       <Provider store={store}>
         <div className="flex flex-1 gap-2">
           <SideBar />
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
         <Footer active={active} toggleActive={toggleActive} />
       </Provider>
+    </div>
   );
 }
 
