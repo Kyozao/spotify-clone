@@ -1,8 +1,5 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../page";
-import play, { togglePlayButton } from "../lib/play";
 
 interface HighlightProps {
   img: string;
@@ -11,23 +8,14 @@ interface HighlightProps {
 }
 
 export default function Highlight(props: HighlightProps) {
-  const playButton = useSelector((state: RootState) => state.playButton.value);
-  const dispatch = useDispatch();
   const [playHighlight, setPlayHighlight] = useState("Play");
   const toggleButton = () => {
-    if (playHighlight === "Play" && playButton === "play_arrow") {
+    if (playHighlight === "Play") {
       setPlayHighlight("Pause");
-      dispatch(togglePlayButton());
-    } else if (playHighlight === "Play" && playButton === "pause") {
-      setPlayHighlight("Play");
-    } else if (playHighlight === "Pause" && playButton === "pause") {
-      setPlayHighlight("Play");
-      dispatch(togglePlayButton());
-    } else if (playHighlight === "Pause" && playButton === "play_arrow") {
+    } else {
       setPlayHighlight("Play");
     }
   };
-
   return (
     <div className="flex flex-col md:flex-row bg-black/50 py-12 gap-3 md:space-x-5 space-y-3 items-center px-5 mx-auto">
       <a className="">
