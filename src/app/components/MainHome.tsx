@@ -12,12 +12,12 @@ export default function MainHome() {
         subtitle="Listen to the most sucessful Metal songs!"
         img="/Album-covers/Sleeptokenbig.jpg"
       ></Highlight>
-      <div className="flex flex-col pt-6">
+      <section className="flex flex-col pt-6">
         <h2 className="text-3xl font-bold">Good Afternoon</h2>
         <Topics></Topics>
-      </div>
+      </section>
       {/*Cards Here*/}
-      <div className="flex flex-col pt-6">
+      <section className="flex flex-col pt-6">
         <div className="flex justify-between items-center">
           <h2 className="text-3xl font-bold">Made For You</h2>
           <a href="" className="text-base font-semibold text-zinc-400">
@@ -25,7 +25,7 @@ export default function MainHome() {
           </a>
         </div>
         <Card></Card>
-      </div>
+      </section>
     </main>
   );
 }
