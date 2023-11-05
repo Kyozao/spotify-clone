@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
+import SideBar from "@/components/SideBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Spotify",
@@ -19,7 +20,9 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/favicon.ico" />
       </head>
-      <body className="bg-black text-zinc-50">{children}</body>
+      <body className="font.className">
+        <SideBar>{children}</SideBar>
+      </body>
     </html>
   );
 }
