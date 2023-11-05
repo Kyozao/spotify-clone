@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import SideBar from "@/components/SideBar";
+import SupabaseProvider from "../../providers/SupabaseProvider";
 
 const font = Figtree({ subsets: ["latin"] });
 
@@ -21,7 +22,9 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
       </head>
       <body className="font.className pr-2">
-        <SideBar>{children}</SideBar>
+        <SupabaseProvider>
+          <SideBar>{children}</SideBar>
+        </SupabaseProvider>
       </body>
     </html>
   );
