@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/favicon.ico" />
       </head>
-      <body className="font.className">
+      <body className="font.className pr-2">
         <SideBar>{children}</SideBar>
       </body>
     </html>
