@@ -5,6 +5,7 @@ import SideBar from "@/components/SideBar";
 import SupabaseProvider from "../../providers/SupabaseProvider";
 import UserProvider from "../../providers/UserProvider";
 import ModalProvider from "../../providers/ModalProvider";
+import ToasterProvider from "../../providers/ToasterProvider";
 
 const font = Figtree({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
       </head>
       <body className="font.className pr-2">
+        <ToasterProvider />
         <SupabaseProvider>
           <UserProvider>
             <ModalProvider />
