@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 import { HiHome } from "react-icons/hi";
+import { GoHome, GoHomeFill } from "react-icons/go";
 import { BiSearch } from "react-icons/bi";
 import Box from "./Box";
 import SideBarItem from "./SideBarItem";
@@ -19,7 +20,7 @@ const SideBar: React.FC<SideBarProps> = ({ children, songs }) => {
   const routes = useMemo(
     () => [
       {
-        icon: HiHome,
+        icon: GoHomeFill,
         label: "Home",
         active: pathname === "/",
         href: "/",
